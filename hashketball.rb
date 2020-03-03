@@ -287,7 +287,7 @@ def player_with_longest_name
           if player[:player_name].length > longest_name.length
             
             player[:player_name] 
-            longest_name = player[:Player_name]
+            longest_name = player[:player_name]
             binding.pry
            
           end
