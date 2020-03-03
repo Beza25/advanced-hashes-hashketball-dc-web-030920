@@ -284,8 +284,7 @@ def player_with_longest_name
     team.each do |attribute, data|
       if attribute == :players
         data.each do |player|
-          if player[:player_name].count > longest_name.count
-             binding.pry
+          if player[:player_name].length > longest_name.length
             
             player[:player_name] 
             
