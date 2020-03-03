@@ -296,6 +296,7 @@ end
 
 def long_name_steals_a_ton?
   most_steals = game_hash[:home][:players][0][:steals]
+  name = ""
   game_hash.each do | place, team |
     team.each do |attribute, data|
       if attribute == :players
