@@ -260,11 +260,12 @@ def winning_team
  game_hash.each do |place, team|
    team.each do |attribute, data|
      if attribute == :players
-       data.each do |player|
-         if 
+       data.each do |player
+         binding.pry
+         
          
        end
-   binding.pry
+ 
     end
    
  end
