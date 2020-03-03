@@ -257,12 +257,15 @@ end
 def winning_team
  home_total = 0 
  away_total = 0
- game_hash.each do |plac, data|
-   if attribute == :players
-     data.each do |player|
-       
-     end
+ game_hash.each do |place, team|
+   team.each do |attribute, data|
+     if attribute == :players
+       data.each do |player|
+         if 
+         
+       end
    binding.pry
+    end
    
  end
 end
