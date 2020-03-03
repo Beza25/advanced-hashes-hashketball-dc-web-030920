@@ -302,13 +302,13 @@ def long_name_steals_a_ton?
         data.each do |player|
           if player[:steals] > most_steals
             most_steals = player[:steals] 
-            player_name = player[:player_name]
+            player[:player_name]
           end
         end
       end
     end
   end
-  if player_name == player_with_longest_name
+  if player[:player_name] == player_with_longest_name
     return true 
   end
 end
