@@ -261,13 +261,21 @@ def winning_team
    team.each do |attribute, data|
      if attribute == :players
        data.each do |player|
-         binding.pry
-       end
+         if place == :home 
+           home_total += player[:points]
+         else
+           away_total += player[:points]
+         end
          
+       end
       end
- 
     end
-   
+ end
+ if home_total > away_total
+   binding.pry
+   game_hash[:home][:team_name]
+ else
+   game_hash[:away][:team_name]
  end
 end
 
