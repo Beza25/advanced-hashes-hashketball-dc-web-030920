@@ -272,7 +272,7 @@ def winning_team
     end
  end
  if home_total > away_total
-   binding.pry
+ 
    game_hash[:home][:team_name]
  else
    game_hash[:away][:team_name]
