@@ -301,7 +301,7 @@ def long_name_steals_a_ton
         data.each do |player|
           if player[:steals] > most_steals
             most_steals = player[:steals] 
-            player_with_most_steals =player[:player_name]
+            player_name = player[:player_name]
           end
         end
       end
